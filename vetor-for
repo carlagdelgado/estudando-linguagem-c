@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    char n [2][8]={{'n', 'e', 'u', 'm','i','a','r','t'},{'b','a','p','t','i','s','t','a'}};
+    int col = sizeof(n[0]);
+    int row = sizeof(n) / sizeof(n[0]);
+    
+
+    for (int i = 0; i < row; i++){
+        for (int j = 0; j < col; j++){
+         printf("%c", n[i][j]);
+        }
+        printf(" ");
+    }
+    return 0;
+}
